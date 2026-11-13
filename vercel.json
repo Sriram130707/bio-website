@@ -1,0 +1,9 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://bio-website-xyoa.onrender.com/api/:path*"
+    }
+  ]
+}
