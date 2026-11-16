@@ -320,6 +320,83 @@ export default function App() {
           </section>
         </div>
 
+
+        <section
+          aria-labelledby="team-heading"
+          style={{
+            margin: "4rem auto 2rem",
+            maxWidth: "1100px",
+            padding: "2.5rem 1.5rem",
+            borderRadius: "24px",
+            background: "linear-gradient(135deg, #f1f4eb, #e8eee2)",
+            border: "1px solid #dce5d5",
+          }}
+        >
+          <div style={{ textAlign: "center", marginBottom: "2rem" }}>
+            <p style={{ color: "#71866a", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.16em", marginBottom: "0.6rem" }}>
+              THE PEOPLE BEHIND PLANTWISE
+            </p>
+            <h2 id="team-heading" style={{ color: "#263d2c", fontSize: "clamp(1.7rem, 4vw, 2.4rem)", margin: 0 }}>
+              Meet Our Team
+            </h2>
+            <p style={{ color: "#687568", marginTop: "0.7rem" }}>
+              The team working together on Plant Stress Insight.
+            </p>
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(145px, 1fr))",
+              gap: "1rem",
+            }}
+          >
+            {[
+              { name: "LOKESH", id: "25BTRCL132" },
+              { name: "CHARITHA", id: "25BTRCL133" },
+              { name: "KARTHIK", id: "25BTRCL134" },
+              { name: "MUKESH", id: "25BTRCL137" },
+              { name: "MANVI", id: "25BTRCL146" },
+              { name: "MONIKA", id: "25BTRCL" },
+              { name: "SRIRAM", id: "25BTRCL" },
+            ].map((member) => (
+              <article
+                key={member.name}
+                style={{
+                  padding: "1.25rem 1rem",
+                  borderRadius: "16px",
+                  background: "rgba(255, 255, 255, 0.82)",
+                  border: "1px solid #dce5d5",
+                  textAlign: "center",
+                  boxShadow: "0 5px 18px rgba(45, 67, 46, 0.06)",
+                }}
+              >
+                <div
+                  aria-hidden="true"
+                  style={{
+                    width: "42px",
+                    height: "42px",
+                    margin: "0 auto 0.8rem",
+                    borderRadius: "50%",
+                    display: "grid",
+                    placeItems: "center",
+                    background: "#e3ebdd",
+                    color: "#496b50",
+                    fontWeight: 800,
+                  }}
+                >
+                  {member.name.charAt(0)}
+                </div>
+                <h3 style={{ color: "#2e4934", fontSize: "0.95rem", margin: "0 0 0.4rem" }}>
+                  {member.name}
+                </h3>
+                <p style={{ color: "#788477", fontSize: "0.78rem", margin: 0, overflowWrap: "anywhere" }}>
+                  {member.id}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <p className="footer-note"><LeafIcon /> Good plant care starts with noticing.</p>
       </main>
       <footer className="site-footer"><span>Plantwise · A helpful first look, never a diagnosis.</span><span>Take care, and grow at your own pace.</span></footer>
