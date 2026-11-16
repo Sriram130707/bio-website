@@ -356,8 +356,8 @@ export default function App() {
               { name: "KARTHIK", id: "25BTRCL134" },
               { name: "MUKESH", id: "25BTRCL137" },
               { name: "MANVI", id: "25BTRCL146" },
-              { name: "MONIKA", id: "25BTRCL" },
-              { name: "SRIRAM", id: "25BTRCL" },
+              { name: "MONIKA", id: "25BTRCL177" },
+              { name: "SRIRAM", id: "25BTRCL178" },
             ].map((member) => (
               <article
                 key={member.name}
